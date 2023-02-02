@@ -8,5 +8,5 @@ data class DepositsArbitrumBridgeEntity(
     val timeStamp: String,
     val to: String,
     val transactionIndex: String,
-    val value: String
+    val value: Double
 )

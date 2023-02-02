@@ -9,5 +9,5 @@ data class TransferUsdtFromBinanceEntity(
     val timeStamp: String,
     val to: String,
     val tokenSymbol: String,
-    val value: String
+    val value: Double
 )
