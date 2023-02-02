@@ -1,7 +1,8 @@
-package com.most4dev.etherscan
+package com.most4dev.etherscan.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.most4dev.etherscan.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
