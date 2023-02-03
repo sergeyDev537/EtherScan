@@ -16,7 +16,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 val dataModule = module {
 
     single<RecipesEtherRepository> {
-        RecipesEtherRepositoryImpl(get())
+        RecipesEtherRepositoryImpl(
+            context = get(),
+            etherScanApi = get())
     }
 
     single<StatsEtherRepository> {

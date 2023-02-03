@@ -10,4 +10,10 @@
         android:name="com.most4dev.etherscan.presentation.fragments.HomeFragment"
         android:label="@string/home"
         tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_features"
+        android:name="com.most4dev.etherscan.presentation.fragments.FeaturesFragment"
+        android:label="@string/features"
+        tools:layout="@layout/fragment_features" />
 </navigation>
