@@ -3,6 +3,7 @@
 
     <!--NAVIGATION-->
     <string name="home">Home</string>
+    <string name="features">Features</string>
 
     <!--BASE PARAMS-->
     <string name="price_usdt">Price USDT</string>
@@ -10,6 +11,11 @@
     <string name="ethereum_supply">Total supply</string>
     <string name="ethereum_nodes">Total nodes</string>
     <string name="default_base_params">--/--</string>
+
+    <!--LIST FEATURES-->
+    <string name="transfer_usdt_from_binance">Transfer USDT from Binance</string>
+    <string name="transfer_moonbird_nft">Transfer Latest Moonbird NFT</string>
+    <string name="deposits_eth_to_arbitrum_bridge">Deposits ETH to Arbitrum Bridge</string>
 
     <!--CONTENT DESCRIPTION-->
     <string name="cd_icon_ethereum_price_usdt">Icon Ethereum price to usdt</string>
