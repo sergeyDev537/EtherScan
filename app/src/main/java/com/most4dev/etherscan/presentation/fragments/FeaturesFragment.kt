@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.most4dev.etherscan.R
 import com.most4dev.etherscan.databinding.FragmentFeaturesBinding
 import com.most4dev.etherscan.domain.entities.ActionRecipesEnum
 import com.most4dev.etherscan.presentation.adapters.FeaturesAdapter
@@ -47,8 +49,7 @@ class FeaturesFragment : Fragment() {
     private fun showOnceFeatureFragment(actionRecipesEnum: ActionRecipesEnum){
         when(actionRecipesEnum){
             ActionRecipesEnum.TRANSFER_USDT_BINANCE -> {
-                //TODO
-                //findNavController().navigate()
+                findNavController().navigate(R.id.transferUsdtFromBinanceFragment)
             }
             ActionRecipesEnum.TRANSFER_MOONBIRD_NFT -> {
                 //TODO

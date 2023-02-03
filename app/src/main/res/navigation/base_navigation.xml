@@ -16,4 +16,11 @@
         android:name="com.most4dev.etherscan.presentation.fragments.FeaturesFragment"
         android:label="@string/features"
         tools:layout="@layout/fragment_features" />
+    <fragment
+        android:id="@+id/transferUsdtFromBinanceFragment"
+        android:name="com.most4dev.etherscan.presentation.fragments.TransferUsdtFromBinanceFragment"
+        android:label="@string/transfer_usdt_binance"
+        tools:layout="@layout/fragment_transfer_usdt_from_binance"/>
+
+
 </navigation>

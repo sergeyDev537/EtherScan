@@ -1,6 +1,8 @@
 package com.most4dev.etherscan.presentation.adapters
 
 import androidx.recyclerview.widget.RecyclerView
-import com.most4dev.etherscan.databinding.ItemFeaturesBinding
+import com.most4dev.etherscan.databinding.ItemTransfersUsdtBinanceBinding
 
-class FeaturesViewHolder(val binding: ItemFeaturesBinding): RecyclerView.ViewHolder(binding.root)
+class TransferUsdtBinanceViewHolder(
+    val binding: ItemTransfersUsdtBinanceBinding,
+) : RecyclerView.ViewHolder(binding.root)
