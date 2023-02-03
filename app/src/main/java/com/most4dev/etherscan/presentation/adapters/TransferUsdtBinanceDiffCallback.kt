@@ -1,14 +1,20 @@
 package com.most4dev.etherscan.presentation.adapters
 
 import androidx.recyclerview.widget.DiffUtil
-import com.most4dev.etherscan.domain.entities.FeaturesEntity
+import com.most4dev.etherscan.domain.entities.TransferUsdtFromBinanceEntity
 
-class FeaturesDiffCallback: DiffUtil.ItemCallback<FeaturesEntity>() {
-    override fun areItemsTheSame(oldItem: FeaturesEntity, newItem: FeaturesEntity): Boolean {
-        return oldItem.actionRecipesEnum == newItem.actionRecipesEnum
+class TransferUsdtBinanceDiffCallback : DiffUtil.ItemCallback<TransferUsdtFromBinanceEntity>() {
+    override fun areItemsTheSame(
+        oldItem: TransferUsdtFromBinanceEntity,
+        newItem: TransferUsdtFromBinanceEntity,
+    ): Boolean {
+        return oldItem.hash == newItem.hash
     }
 
-    override fun areContentsTheSame(oldItem: FeaturesEntity, newItem: FeaturesEntity): Boolean {
+    override fun areContentsTheSame(
+        oldItem: TransferUsdtFromBinanceEntity,
+        newItem: TransferUsdtFromBinanceEntity,
+    ): Boolean {
         return oldItem == newItem
     }
 

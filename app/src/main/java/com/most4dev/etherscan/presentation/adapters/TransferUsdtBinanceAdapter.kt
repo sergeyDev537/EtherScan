@@ -2,31 +2,39 @@ package com.most4dev.etherscan.presentation.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.ListAdapter
-import com.most4dev.etherscan.databinding.ItemFeaturesBinding
-import com.most4dev.etherscan.domain.entities.ActionRecipesEnum
-import com.most4dev.etherscan.domain.entities.FeaturesEntity
+import com.most4dev.etherscan.R
+import com.most4dev.etherscan.databinding.ItemTransfersUsdtBinanceBinding
+import com.most4dev.etherscan.domain.entities.TransferUsdtFromBinanceEntity
 
-class FeaturesAdapter: ListAdapter<FeaturesEntity, FeaturesViewHolder>(FeaturesDiffCallback()) {
+class TransferUsdtBinanceAdapter :
+    ListAdapter<TransferUsdtFromBinanceEntity, TransferUsdtBinanceViewHolder>(
+        TransferUsdtBinanceDiffCallback()
+    ) {
 
-    var clickItemFeatures: ((ActionRecipesEnum) -> Unit)? = null
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FeaturesViewHolder {
-        val binding = ItemFeaturesBinding.inflate(
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TransferUsdtBinanceViewHolder {
+        val binding = ItemTransfersUsdtBinanceBinding.inflate(
             LayoutInflater.from(parent.context),
             parent,
             false
         )
-        return FeaturesViewHolder(binding)
+        return TransferUsdtBinanceViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: FeaturesViewHolder, position: Int) {
-        val itemFeatures = getItem(position)
+    override fun onBindViewHolder(holder: TransferUsdtBinanceViewHolder, position: Int) {
+        val itemTransactions = getItem(position)
         val binding = holder.binding
-        binding.tvFeaturesName.text = itemFeatures.nameFeatures
-        binding.root.setOnClickListener {
-            clickItemFeatures?.invoke(itemFeatures.actionRecipesEnum)
-        }
+        val context = holder.binding.root.context
+        binding.addressFromBinance.text = itemTransactions.from
+        binding.addressToBinance.text = itemTransactions.to
+        binding.transferValueBinance.text = String.format(
+            context.getString(R.string.transfer_value),
+            itemTransactions.value,
+            itemTransactions.tokenSymbol
+        )
+        binding.transferGasBinanceValue.text = itemTransactions.gas
+        binding.transferDateValue.text = itemTransactions.timeStamp
     }
 
 

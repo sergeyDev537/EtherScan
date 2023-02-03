@@ -7,7 +7,7 @@ import com.most4dev.etherscan.domain.entities.FeaturesEntity
 import com.most4dev.etherscan.domain.repositories.RecipesEtherRepository
 
 class FeaturesViewModel(
-    private val recipesEtherRepositoryImpl: RecipesEtherRepository,
+    private val recipesEtherRepositoryImpl: RecipesEtherRepository
 ) : ViewModel() {
 
     private var _listFeatures = MutableLiveData<List<FeaturesEntity>>()

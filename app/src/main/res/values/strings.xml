@@ -17,11 +17,18 @@
     <string name="transfer_moonbird_nft">Transfer Latest Moonbird NFT</string>
     <string name="deposits_eth_to_arbitrum_bridge">Deposits ETH to Arbitrum Bridge</string>
 
+    <!--TRANSFER USDT FROM BINANCE-->
+    <string name="transfer_usdt_binance">Transfer USDT Binance</string>
+    <string name="gas_label">Gas:</string>
+    <string name="date_label">Date:</string>
+    <string name="transfer_value">%1$s %2$s</string>
+
     <!--CONTENT DESCRIPTION-->
     <string name="cd_icon_ethereum_price_usdt">Icon Ethereum price to usdt</string>
     <string name="cd_icon_ethereum_price_btc">Icon Ethereum price to btc</string>
     <string name="cd_icon_ethereum_total_supply">Icon Ethereum total supply</string>
     <string name="cd_icon_ethereum_total_nodes">Icon Ethereum total nodes</string>
+    <string name="cd_icon_transfer">Icon transfer</string>
 
 
 </resources>

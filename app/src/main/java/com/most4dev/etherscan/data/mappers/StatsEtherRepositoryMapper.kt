@@ -6,6 +6,7 @@ import com.most4dev.etherscan.domain.entities.*
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
+import kotlin.math.roundToInt
 
 const val FORMAT_DEFAULT = "yyyy-MM-dd"
 const val FORMAT_EDITABLE = "dd-MM-yyyy"
@@ -97,14 +98,15 @@ fun mapTransferUsdtBinanceNetworkModelToEntity(
 }
 
 fun mapLongStringToDate(time: String): String {
-    val longTime = time.toLong()
+    val longTime = time.toLong() * 1000L
     val simpleDateFormat = SimpleDateFormat(FORMAT_EDITABLE, Locale.ROOT)
     return simpleDateFormat.format(longTime)
 }
 
 fun mapValueStringSzbao(countString: String): Double {
-    val countInt = countString.toInt()
-    return countInt / DEFAULT_SZBAO
+    val countInt = countString.toLong()
+    val doubleCount = countInt / DEFAULT_SZBAO
+    return (doubleCount * 100).roundToInt() / 100.0
 }
 
 fun mapMoonBirdNftTransfersNetworkModelToEntity(
