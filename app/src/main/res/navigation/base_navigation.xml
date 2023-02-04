@@ -26,21 +26,23 @@
             android:id="@+id/action_navigation_features_to_depositsEthArbitrumBridgeFragment"
             app:destination="@id/depositsEthArbitrumBridgeFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/transferUsdtFromBinanceFragment"
         android:name="com.most4dev.etherscan.presentation.fragments.TransferUsdtFromBinanceFragment"
         android:label="@string/transfer_usdt_from_binance"
         tools:layout="@layout/fragment_transfer_usdt_from_binance" />
+
     <fragment
         android:id="@+id/transferMoonbirdNftFragment"
         android:name="com.most4dev.etherscan.presentation.fragments.TransferMoonbirdNftFragment"
         android:label="@string/transfer_moonbird_nft"
         tools:layout="@layout/fragment_transfer_moonbird_nft" />
+
     <fragment
         android:id="@+id/depositsEthArbitrumBridgeFragment"
         android:name="com.most4dev.etherscan.presentation.fragments.DepositsEthArbitrumBridgeFragment"
         android:label="@string/deposits_eth_to_arbitrum_bridge"
         tools:layout="@layout/fragment_deposits_eth_arbitrum_bridge" />
-
 
 </navigation>
