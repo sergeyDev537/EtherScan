@@ -59,8 +59,9 @@ class FeaturesFragment : Fragment() {
                 )
             }
             ActionRecipesEnum.DEPOSITS_ARBITRUM_BRIDGE -> {
-                //TODO
-                //findNavController().navigate()
+                findNavController().navigate(
+                    R.id.action_navigation_features_to_depositsEthArbitrumBridgeFragment
+                )
             }
         }
     }
