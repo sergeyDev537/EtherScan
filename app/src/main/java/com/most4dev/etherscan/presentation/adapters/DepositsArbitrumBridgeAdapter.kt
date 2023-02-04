@@ -27,7 +27,10 @@ class DepositsArbitrumBridgeAdapter :
         val context = binding.root.context
         binding.addressFrom.text = itemDeposits.from
         binding.addressTo.text = itemDeposits.to
-        binding.tvValue.text = itemDeposits.value.toString()
+        binding.tvValue.text = String.format(
+            context.getString(R.string.value_eth),
+            itemDeposits.value.toString()
+        )
         binding.tvTransactionIndex.text = String.format(
             context.getString(R.string.transaction_index),
             itemDeposits.transactionIndex
