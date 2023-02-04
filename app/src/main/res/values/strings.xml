@@ -19,9 +19,15 @@
 
     <!--TRANSFER USDT FROM BINANCE-->
     <string name="transfer_usdt_binance">Transfer USDT Binance</string>
-    <string name="gas_label">Gas:</string>
-    <string name="date_label">Date:</string>
+    <string name="gas_label">Gas: %1$s</string>
+    <string name="date_label">Date: %1$s</string>
     <string name="transfer_value">%1$s %2$s</string>
+    
+    <!--TRANSFER MOONBIRD NFT-->
+    <string name="transfer_usdt_moonbird_nft">Transfer Moonbird NFT</string>
+    <string name="hash_value">Hash: %1$s</string>
+    <string name="confirmations_value">Confirmations: %1$s</string>
+    <string name="token_name_value">Token: %1$s</string>
 
     <!--CONTENT DESCRIPTION-->
     <string name="cd_icon_ethereum_price_usdt">Icon Ethereum price to usdt</string>
@@ -29,6 +35,5 @@
     <string name="cd_icon_ethereum_total_supply">Icon Ethereum total supply</string>
     <string name="cd_icon_ethereum_total_nodes">Icon Ethereum total nodes</string>
     <string name="cd_icon_transfer">Icon transfer</string>
-
 
 </resources>

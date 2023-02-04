@@ -38,7 +38,7 @@ interface EtherScanApi {
     ): Response<TransferUsdtFromBinanceNetworkModel>
 
     @GET(
-        "module=account" +
+        "/api?module=account" +
                 "&action=tokennfttx" +
                 "&page=${NUM_PAGE}" +
                 "&offset=${OFFSET}" +
@@ -52,7 +52,7 @@ interface EtherScanApi {
     ): Response<MoonBirdNftTransfersNetworkModel>
 
     @GET(
-        "module=account" +
+        "/api?module=account" +
                 "&action=txlist" +
                 "&startblock=${START_BLOCK}" +
                 "&endblock=${END_BLOCK}" +

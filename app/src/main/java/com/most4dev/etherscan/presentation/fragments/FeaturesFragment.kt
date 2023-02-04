@@ -46,14 +46,17 @@ class FeaturesFragment : Fragment() {
         }
     }
 
-    private fun showOnceFeatureFragment(actionRecipesEnum: ActionRecipesEnum){
-        when(actionRecipesEnum){
+    private fun showOnceFeatureFragment(actionRecipesEnum: ActionRecipesEnum) {
+        when (actionRecipesEnum) {
             ActionRecipesEnum.TRANSFER_USDT_BINANCE -> {
-                findNavController().navigate(R.id.transferUsdtFromBinanceFragment)
+                findNavController().navigate(
+                    R.id.action_navigation_features_to_transferUsdtFromBinanceFragment
+                )
             }
             ActionRecipesEnum.TRANSFER_MOONBIRD_NFT -> {
-                //TODO
-                //findNavController().navigate()
+                findNavController().navigate(
+                    R.id.action_navigation_features_to_transferMoonbirdNftFragment
+                )
             }
             ActionRecipesEnum.DEPOSITS_ARBITRUM_BRIDGE -> {
                 //TODO
@@ -63,7 +66,7 @@ class FeaturesFragment : Fragment() {
     }
 
     private fun setObserve() {
-        featuresViewModel.listFeatures.observe(viewLifecycleOwner){
+        featuresViewModel.listFeatures.observe(viewLifecycleOwner) {
             featuresAdapter.submitList(it)
         }
     }

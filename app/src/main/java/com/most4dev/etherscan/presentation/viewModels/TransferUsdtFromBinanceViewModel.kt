@@ -16,13 +16,23 @@ class TransferUsdtFromBinanceViewModel(
     val listTransfersBinance: LiveData<List<TransferUsdtFromBinanceEntity>>
         get() = _listTransfersBinance
 
+    private var _errorListTransfersBinance = MutableLiveData<String>()
+    val errorListTransfersBinance: LiveData<String>
+        get() = _errorListTransfersBinance
+
     init {
         getListTransfersBinance()
     }
 
     private fun getListTransfersBinance() {
         viewModelScope.launch {
-            _listTransfersBinance.value = recipesEtherRepositoryImpl.getUsdtTransfersBinance()
+            try {
+                _listTransfersBinance.value = recipesEtherRepositoryImpl.getUsdtTransfersBinance()
+            }
+            catch (e: Exception) {
+                _errorListTransfersBinance.value = e.message
+            }
+
         }
     }
 

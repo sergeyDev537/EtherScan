@@ -13,7 +13,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/address_from_binance"
+            android:id="@+id/address_from"
             style="@style/TextViewAddress"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -31,61 +31,85 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/cd_icon_transfer"
             android:src="@drawable/ic_arrow_right"
-            app:layout_constraintBottom_toBottomOf="@+id/address_from_binance"
-            app:layout_constraintEnd_toStartOf="@+id/address_to_binance"
+            app:layout_constraintBottom_toBottomOf="@+id/address_from"
+            app:layout_constraintEnd_toStartOf="@+id/address_to"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/address_from_binance"
-            app:layout_constraintTop_toTopOf="@+id/address_from_binance" />
+            app:layout_constraintStart_toEndOf="@+id/address_from"
+            app:layout_constraintTop_toTopOf="@+id/address_from" />
 
         <TextView
-            android:id="@+id/address_to_binance"
+            android:id="@+id/address_to"
             style="@style/TextViewAddress"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
             tools:text="0x27739b00affe5614af8a42dc992ae1cef122c2a9" />
 
         <TextView
-            android:id="@+id/transfer_value_binance"
-            android:layout_width="0dp"
+            android:id="@+id/tv_hash"
+            style="@style/TextViewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address_from"
+            tools:text="Hash: 0x20093889286b5b5b2c1fac0e0138c5eccc2355eaf7dd92e02bf7ac59d5de7244" />
+
+        <TextView
+            android:id="@+id/tv_token_name"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            tools:text = "150 USDT"/>
+            app:layout_constraintTop_toBottomOf="@+id/tv_hash"
+            tools:text="Token: Moonbird" />
+
+        <TextView
+            android:id="@+id/tv_confirmations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_token_name"
+            tools:text="Confirmations: 100" />
 
         <TextView
             android:id="@+id/transfer_gas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
-            android:text="@string/gas_label"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/transfer_value_binance" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_confirmations"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="Gas: 100" />
 
         <TextView
             android:id="@+id/transfer_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="@string/date_label"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/transfer_value_binance" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_confirmations"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="22/07/2023" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
