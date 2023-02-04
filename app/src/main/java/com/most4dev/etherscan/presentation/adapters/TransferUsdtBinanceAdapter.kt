@@ -2,7 +2,6 @@ package com.most4dev.etherscan.presentation.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.ListAdapter
 import com.most4dev.etherscan.R
 import com.most4dev.etherscan.databinding.ItemTransfersUsdtBinanceBinding
@@ -33,8 +32,15 @@ class TransferUsdtBinanceAdapter :
             itemTransactions.value,
             itemTransactions.tokenSymbol
         )
-        binding.transferGasBinanceValue.text = itemTransactions.gas
-        binding.transferDateValue.text = itemTransactions.timeStamp
+        binding.transferGas.text = String.format(
+            context.getString(R.string.gas_label),
+            itemTransactions.gas
+        )
+
+        binding.transferDate.text = String.format(
+            context.getString(R.string.date_label),
+            itemTransactions.timeStamp
+        )
     }
 
 

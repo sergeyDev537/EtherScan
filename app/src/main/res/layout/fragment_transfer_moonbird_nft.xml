@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".presentation.fragments.TransferUsdtFromBinanceFragment">
+    tools:context=".presentation.fragments.TransferMoonbirdNftFragment">
 
     <ProgressBar
         android:id="@+id/progress"
@@ -16,11 +16,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_transfers_usdt"
+        android:id="@+id/rv_transfers_moonbird_nft"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_transfers_usdt_binance"/>
+        tools:listitem="@layout/item_transfers_moonbird_nft"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
