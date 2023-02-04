@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragments.HomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_price_usdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="16dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toStartOf="@+id/guid_line_vertical_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_60">
+
+            <ImageView
+                android:id="@+id/icon_ethereum_price_usdt"
+                style="@style/IconBaseParams"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/cd_icon_ethereum_price_usdt"
+                app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_35_price_usdt"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_line_horizontal_35_price_usdt"
+                style="@style/GuideLineBaseParams"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/tv_name_params_price_usdt"
+                style="@style/TextViewNameBaseParams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_usdt"
+                app:layout_constraintTop_toTopOf="@+id/guide_line_horizontal_35_price_usdt"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_value_params_price_usdt"
+                style="@style/TextViewValueBaseParams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_base_params"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_params_price_usdt"
+                tools:ignore="MissingConstraints"
+                tools:text="100000" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_price_btc"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="16dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guid_line_vertical_50"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_60">
+
+            <ImageView
+                android:id="@+id/icon_ethereum_price_btc"
+                style="@style/IconBaseParams"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/cd_icon_ethereum_price_btc"
+                app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_35_price_btc"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_line_horizontal_35_price_btc"
+                style="@style/GuideLineBaseParams"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/tv_name_params_price_btc"
+                style="@style/TextViewNameBaseParams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_btc"
+                app:layout_constraintTop_toTopOf="@+id/guide_line_horizontal_35_price_btc"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_value_params_price_btc"
+                style="@style/TextViewValueBaseParams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_base_params"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_params_price_btc"
+                tools:ignore="MissingConstraints"
+                tools:text="100000" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_supply"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="16dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guid_line_vertical_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_price_usdt">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_60">
+
+            <ImageView
+                android:id="@+id/icon_ethereum_supply"
+                style="@style/IconBaseParams"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/cd_icon_ethereum_total_supply"
+                app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_35_supply"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_line_horizontal_35_supply"
+                style="@style/GuideLineBaseParams"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/tv_name_params_supply"
+                style="@style/TextViewNameBaseParams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ethereum_supply"
+                app:layout_constraintTop_toTopOf="@+id/guide_line_horizontal_35_supply"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_value_params_supply"
+                style="@style/TextViewValueBaseParams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_base_params"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_params_supply"
+                tools:ignore="MissingConstraints"
+                tools:text="100000" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_nodes"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="16dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guid_line_vertical_50"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_price_btc">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_60">
+
+            <ImageView
+                android:id="@+id/icon_ethereum_nodes"
+                style="@style/IconBaseParams"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/cd_icon_ethereum_total_nodes"
+                app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_35_nodes"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_line_horizontal_35_nodes"
+                style="@style/GuideLineBaseParams"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/tv_name_params_nodes"
+                style="@style/TextViewNameBaseParams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ethereum_nodes"
+                app:layout_constraintTop_toTopOf="@+id/guide_line_horizontal_35_nodes"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_value_params_nodes"
+                style="@style/TextViewValueBaseParams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_base_params"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_params_nodes"
+                tools:ignore="MissingConstraints"
+                tools:text="100000" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guid_line_vertical_50"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
