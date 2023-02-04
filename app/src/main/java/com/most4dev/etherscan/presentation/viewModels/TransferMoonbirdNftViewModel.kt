@@ -9,7 +9,7 @@ import com.most4dev.etherscan.domain.repositories.RecipesEtherRepository
 import kotlinx.coroutines.launch
 
 class TransferMoonbirdNftViewModel(
-    private val recipesEtherRepositoryImpl: RecipesEtherRepository,
+    private val recipesEtherRepositoryImpl: RecipesEtherRepository
 ) : ViewModel() {
 
     private var _listTransfersMoonbirdNft = MutableLiveData<List<MoonbirdNftTransfersEntity>>()

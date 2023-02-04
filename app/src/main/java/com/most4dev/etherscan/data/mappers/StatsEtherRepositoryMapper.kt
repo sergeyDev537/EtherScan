@@ -10,7 +10,6 @@ import kotlin.math.roundToInt
 
 const val FORMAT_DEFAULT = "yyyy-MM-dd"
 const val FORMAT_EDITABLE = "dd-MM-yyyy"
-const val USD = "USD"
 const val DEFAULT_SZBAO = 1000000.0
 const val DEFAULT_WEI = 1000000000000000000
 
@@ -109,6 +108,12 @@ fun mapValueStringSzbao(countString: String): Double {
     return (doubleCount * 100).roundToInt() / 100.0
 }
 
+fun mapValueStringWeiEth(countString: String): Double {
+    val countDouble = countString.toBigDecimal().toDouble()
+    val countResultDouble = countDouble / DEFAULT_WEI
+    return (countResultDouble * 100).roundToInt() / 100.000
+}
+
 fun mapMoonBirdNftTransfersNetworkModelToEntity(
     listResultMoonBirdNftTransfersNetworkModel: List<ResultMoonBirdNftTransfersNetworkModel>,
 ) = listResultMoonBirdNftTransfersNetworkModel.map {
@@ -149,7 +154,7 @@ fun mapResultDepositsArbitrumBridgeNetworkModelToEntity(
         gas = resultDepositsArbitrumBridgeNetworkModel.gas,
         timeStamp = mapLongStringToDate(resultDepositsArbitrumBridgeNetworkModel.timeStamp),
         transactionIndex = resultDepositsArbitrumBridgeNetworkModel.transactionIndex,
-        value = mapValueStringSzbao(resultDepositsArbitrumBridgeNetworkModel.value)
+        value = mapValueStringWeiEth(resultDepositsArbitrumBridgeNetworkModel.value)
     )
 }
 
