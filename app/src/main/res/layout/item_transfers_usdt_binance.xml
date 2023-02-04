@@ -10,7 +10,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/black_60">
 
         <TextView
             android:id="@+id/address_from_binance"
@@ -51,41 +52,32 @@
 
         <TextView
             android:id="@+id/transfer_value_binance"
+            style="@style/TextViewValueBaseParams"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
-            tools:text = "150 USDT"/>
+            tools:text="150 USDT" />
 
         <TextView
             android:id="@+id/transfer_gas"
+            style="@style/TextViewGasOrDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:text="@string/gas_label"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/transfer_value_binance" />
+            app:layout_constraintTop_toBottomOf="@+id/transfer_value_binance"
+            tools:text="Gas: 1" />
 
         <TextView
             android:id="@+id/transfer_date"
+            style="@style/TextViewGasOrDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/date_label"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/transfer_value_binance" />
+            app:layout_constraintTop_toBottomOf="@+id/transfer_value_binance"
+            tools:text="Date: 01/01/1970" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
