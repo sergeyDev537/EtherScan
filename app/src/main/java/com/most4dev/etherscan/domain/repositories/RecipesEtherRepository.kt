@@ -8,6 +8,7 @@ import com.most4dev.etherscan.domain.entities.TransferUsdtFromBinanceEntity
 interface RecipesEtherRepository {
 
     fun getListFeatures(): List<FeaturesEntity>
+
     suspend fun getUsdtTransfersBinance(): List<TransferUsdtFromBinanceEntity>
 
     suspend fun getLatestMoonbirdNftTransfers() : List<MoonbirdNftTransfersEntity>
