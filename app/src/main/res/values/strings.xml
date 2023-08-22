@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EtherScan</string>
+    <string name="app_name">CryptoScan</string>
 
     <!--NAVIGATION-->
     <string name="home">Home</string>
@@ -11,6 +11,7 @@
     <string name="ethereum_supply">Total supply</string>
     <string name="ethereum_nodes">Total nodes</string>
     <string name="default_base_params">--/--</string>
+    <string name="eth">ETH</string>
 
     <!--LIST FEATURES-->
     <string name="transfer_usdt_from_binance">Transfer USDT from Binance</string>
