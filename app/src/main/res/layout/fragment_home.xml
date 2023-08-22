@@ -10,8 +10,8 @@
         android:id="@+id/card_view_price_usdt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:cardElevation="4dp"
         app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintEnd_toStartOf="@+id/guid_line_vertical_50"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,13 +22,19 @@
             android:layout_height="match_parent"
             android:background="@color/black_60">
 
-            <ImageView
-                android:id="@+id/icon_ethereum_price_usdt"
-                style="@style/IconBaseParams"
-                android:layout_width="50dp"
+            <TextView
+                android:id="@+id/tv_ethereum_price_usdt"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:contentDescription="@string/cd_icon_ethereum_price_usdt"
+                android:fontFamily="@font/alfa_slab_one"
+                android:gravity="center"
+                android:text="@string/eth"
+                android:textColor="@color/white"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_35_price_usdt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <androidx.constraintlayout.widget.Guideline
@@ -49,9 +55,15 @@
             <TextView
                 android:id="@+id/tv_value_params_price_usdt"
                 style="@style/TextViewValueBaseParams"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:ellipsize="end"
+                android:maxLines="1"
                 android:text="@string/default_base_params"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_name_params_price_usdt"
                 tools:ignore="MissingConstraints"
                 tools:text="100000" />
@@ -62,11 +74,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view_price_btc"
-        app:cardElevation="4dp"
-        app:cardCornerRadius="16dp"
-        app:cardUseCompatPadding="true"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guid_line_vertical_50"
         app:layout_constraintTop_toTopOf="parent">
@@ -76,13 +88,19 @@
             android:layout_height="match_parent"
             android:background="@color/black_60">
 
-            <ImageView
-                android:id="@+id/icon_ethereum_price_btc"
-                style="@style/IconBaseParams"
-                android:layout_width="50dp"
+            <TextView
+                android:id="@+id/tv_ethereum_price_btc"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:contentDescription="@string/cd_icon_ethereum_price_btc"
+                android:fontFamily="@font/alfa_slab_one"
+                android:gravity="center"
+                android:text="@string/eth"
+                android:textColor="@color/white"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_35_price_btc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <androidx.constraintlayout.widget.Guideline
@@ -103,9 +121,15 @@
             <TextView
                 android:id="@+id/tv_value_params_price_btc"
                 style="@style/TextViewValueBaseParams"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:ellipsize="end"
+                android:maxLines="1"
                 android:text="@string/default_base_params"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_name_params_price_btc"
                 tools:ignore="MissingConstraints"
                 tools:text="100000" />
@@ -116,11 +140,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view_supply"
-        app:cardElevation="4dp"
-        app:cardCornerRadius="16dp"
-        app:cardUseCompatPadding="true"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
         app:layout_constraintEnd_toStartOf="@+id/guid_line_vertical_50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_view_price_usdt">
@@ -130,13 +154,19 @@
             android:layout_height="match_parent"
             android:background="@color/black_60">
 
-            <ImageView
-                android:id="@+id/icon_ethereum_supply"
-                style="@style/IconBaseParams"
-                android:layout_width="50dp"
+            <TextView
+                android:id="@+id/tv_ethereum_supply"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:contentDescription="@string/cd_icon_ethereum_total_supply"
+                android:fontFamily="@font/alfa_slab_one"
+                android:gravity="center"
+                android:text="@string/eth"
+                android:textColor="@color/white"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_35_supply"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <androidx.constraintlayout.widget.Guideline
@@ -157,9 +187,15 @@
             <TextView
                 android:id="@+id/tv_value_params_supply"
                 style="@style/TextViewValueBaseParams"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:ellipsize="end"
+                android:maxLines="1"
                 android:text="@string/default_base_params"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_name_params_supply"
                 tools:ignore="MissingConstraints"
                 tools:text="100000" />
@@ -170,11 +206,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view_nodes"
-        app:cardElevation="4dp"
-        app:cardCornerRadius="16dp"
-        app:cardUseCompatPadding="true"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guid_line_vertical_50"
         app:layout_constraintTop_toBottomOf="@+id/card_view_price_btc">
@@ -184,13 +220,19 @@
             android:layout_height="match_parent"
             android:background="@color/black_60">
 
-            <ImageView
-                android:id="@+id/icon_ethereum_nodes"
-                style="@style/IconBaseParams"
-                android:layout_width="50dp"
+            <TextView
+                android:id="@+id/tv_ethereum_nodes"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:contentDescription="@string/cd_icon_ethereum_total_nodes"
+                android:fontFamily="@font/alfa_slab_one"
+                android:gravity="center"
+                android:text="@string/eth"
+                android:textColor="@color/white"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_35_nodes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <androidx.constraintlayout.widget.Guideline
@@ -211,9 +253,15 @@
             <TextView
                 android:id="@+id/tv_value_params_nodes"
                 style="@style/TextViewValueBaseParams"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:ellipsize="end"
+                android:maxLines="1"
                 android:text="@string/default_base_params"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_name_params_nodes"
                 tools:ignore="MissingConstraints"
                 tools:text="100000" />
